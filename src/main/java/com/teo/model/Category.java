@@ -1,28 +1,24 @@
 package com.teo.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderItem {
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
+    private String name;
+
+    @JsonIgnore
     @ManyToOne
-    private Food food;
-
-    private int quantity;
-
-    private Long totalPrice;
-
-    private List<String> ingredients;
+    private Restaurant restaurant;
 }
