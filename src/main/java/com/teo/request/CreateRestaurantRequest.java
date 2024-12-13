@@ -1,5 +1,6 @@
 package com.teo.request;
 
+import com.teo.model.Address;
 import com.teo.model.ContactInformation;
 import lombok.Data;
 
@@ -12,7 +13,7 @@ public class CreateRestaurantRequest {
     private String name;
     private String description;
     private String cuisine;
-    private String address;
+    private Address address;
     private ContactInformation contactInformation;
     private String openingHours;
     private List<String> images;
