@@ -1,4 +1,4 @@
-package com.teo.service;
+package com.teo.service.impl;
 
 import com.teo.model.USER_ROLE;
 import com.teo.model.User;

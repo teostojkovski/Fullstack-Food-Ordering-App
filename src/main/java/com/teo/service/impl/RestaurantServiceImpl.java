@@ -1,4 +1,4 @@
-package com.teo.service;
+package com.teo.service.impl;
 
 import com.teo.dto.RestaurantDto;
 import com.teo.model.Address;
@@ -8,6 +8,7 @@ import com.teo.repository.AddressRepository;
 import com.teo.repository.RestaurantRepository;
 import com.teo.repository.UserRepository;
 import com.teo.request.CreateRestaurantRequest;
+import com.teo.service.RestaurantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class RestaurantServiceImpl implements RestaurantService{
+public class RestaurantServiceImpl implements RestaurantService {
 
     @Autowired
     private RestaurantRepository restaurantRepository;

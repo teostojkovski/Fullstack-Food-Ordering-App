@@ -1,9 +1,10 @@
-package com.teo.service;
+package com.teo.service.impl;
 
 
 import com.teo.config.JwtProvider;
 import com.teo.model.User;
 import com.teo.repository.UserRepository;
+import com.teo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
